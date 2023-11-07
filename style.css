@@ -1,0 +1,579 @@
+/* TOUS MES BODY */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+/* EFFET DE FOND BACKGROUD MES BODY */
+#home-page::before {
+  content: "";
+  background-image: url('index/background-1.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px); /* Applique le flou à l'élément ::before */
+  z-index: -1; /* Place l'élément en arrière-plan */
+}
+
+/* --------------------- INDEX -------------------- */
+
+/* TITRE */
+#home-title {
+  font-family: 'Great-Vibes';
+  font-size: 70px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+/* Style pour la barre de navigation */
+.navbar {
+  overflow: hidden;
+  background-color: #333; /* Couleur de fond de la barre de navigation */
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Great-Vibes';
+  src: url('index/GreatVibes-Regular.ttf');
+}
+
+@font-face { 
+  font-family: 'Poppins-Italic';
+  src: url(entreprise/Poppins-Italic.ttf);
+}
+
+/* Style pour les onglets de navigation */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Great-Vibes';
+  font-size: 30px;
+}
+
+/* Style pour la barre de recherche à droite */
+.search-bar {
+  float: right;
+  margin-right: 20px;
+  margin-top: 22px;
+}
+
+/* Texte principal */
+#home-main-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  text-align: center; /* Aligner le texte à droite. */
+  color: white; /* Couleur du texte. */
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  padding: 5px; /* Ajouter un peu d'espace autour du texte. */
+  border-radius: 5px; /* Bords légèrement arrondis. */
+  font-family: 'Great-Vibes', cursive; /* Remplacez "Votre police élégante" par le nom de la police que vous souhaitez utiliser. */
+  font-size: 40px; /* Taille de police */
+  display: flex; /* Ajuste le bloc à la largeur du texte */
+}
+
+#home-BlocPics-1 {
+  display: flex;
+  justify-content: space-between; /* Crée un espace égal entre les images */
+  align-items: center; /* Aligne verticalement les images au centre */
+  margin-top: 50px;
+  flex-direction: row;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#home-BlocPics-1 img {
+  height: 400px; /* Garantit que la hauteur s'ajuste proportionnellement à la largeur */
+  object-fit: contain;
+  border-radius: 50% / 25%; /* Applique une bordure arrondie */
+}
+
+#home-services {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* CONTENU DES SERVICES */
+
+#home-content {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 2px outset white;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Didot', cursive;
+  color: white; /* Couleur du texte. */
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+#home-content h3 {
+  font-family: 'Great-Vibes';
+  font-size: 30px;
+}
+
+/* BOUTON READ MORE */
+
+.bouton-read-more {
+  font-family: 'Didot';
+  color: white; /* Couleur du texte. */
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid white;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#home-BlocPics-2 {
+  display: flex;
+  justify-content: space-between; /* Crée un espace égal entre les images */
+  align-items: center; /* Aligne verticalement les images au centre */
+  margin-top: 50px;
+  flex-direction: row;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#home-BlocPics-2 img {
+  height: 400px; /* Garantit que la hauteur s'ajuste proportionnellement à la largeur */
+  object-fit: contain;
+  border-radius: 50% / 25%; /* Applique une bordure arrondie */
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+/* --------------------- ENTREPRISE -------------------- */
+
+
+/* BODY ENTREPRISE */
+.entreprise-page { 
+  box-sizing: border-box;
+  height: 100%;
+}
+
+:root {
+  --secondary-color: #151226;
+  --contrast-color: white;
+}
+
+.BloomPetals {
+  color: white; /* Couleur du texte. */
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  font-family: 'Great-Vibes';
+  font-size: 50px;
+  margin-left: 300px;
+}
+
+.story-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: var(--contrast-color);
+}
+
+/* Page */
+.story-entreprise {
+  display: flex;
+  height: 200vh;
+  justify-content: space-around;
+  align-items: center;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-size: 25px;
+  color: white; /* Couleur du texte. */
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  transition: all .8s ease;
+}
+
+/* Nouvelle règle pour l'image de fond */
+.story-entreprise::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url(https://images.pexels.com/photos/3405808/pexels-photo-3405808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) center/cover no-repeat;
+  opacity: 0.6; /* Opacité pour voir la navbar à travers l'image */
+}
+
+
+.entreprise-content-inner { /* Contenu intérieur */
+  width: 80%;
+  margin-left: 80px;
+}
+
+.story-entreprise-outer-img {
+  margin-left: 0;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}   
+    
+.entreprise-img {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  position: relative;
+  overflow: hidden; /* Pour empêcher le défilement horizontal */
+}
+
+.story-content p {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  line-height: 80px;
+  margin-bottom: 400px;
+  font-size: 40px;
+  
+}
+
+.story-p{
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+
+/* Titre Histoire */
+
+
+.title h1 {
+  overflow: hidden;
+  height: auto;
+  font-family:'Great-Vibes';
+  font-size: 120px;
+  margin-bottom: 150px;
+}
+
+.story-title h1 {
+    font-size: 60px;
+    color: var(--contrast-color);
+    margin-bottom: 20px;
+    transform: translateY(100px);
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+/* EQUIPE EN COULISSE */
+
+
+.equipe-en-coulisse {
+  display: flex;
+  height: 200vh;
+  justify-content: space-around;
+  align-items: center;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-size: 25px;
+  color: white; /* Couleur du texte. */
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  transition: all .8s ease;
+}
+
+
+.equipe-en-coulisse::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url(https://images.pexels.com/photos/6457491/pexels-photo-6457491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) center/cover no-repeat;
+  opacity: 0.6;
+}
+
+.equipe-content-inner { /* Contenu intérieur */
+  width: 80%;
+  margin-left: 80px;
+}
+
+.story-equipe-outer-img {
+  margin-left: 0;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}   
+    
+.equipe-img {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  position: relative;
+  overflow: hidden; /* Pour empêcher le défilement horizontal */
+}
+
+.equipe h1 {
+  overflow: hidden;
+  height: auto;
+  font-family:'Great-Vibes';
+  font-size: 120px;
+  margin-bottom: 150px;
+}
+
+.equipe-content p {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  line-height: 80px;
+  margin-bottom: 350px;
+  font-size: 40px;
+}
+
+
+/* PARTENARIATS D'EXCEPTION */
+
+
+.partner-entreprise {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-size: 25px;
+  color: white; /* Couleur du texte. */
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  transition: all .8s ease;
+}
+
+
+.partner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url(https://images.pexels.com/photos/16120259/pexels-photo-16120259/free-photo-of-concevoir-interieur-lieu-decor.jpeg) center/cover no-repeat;
+  opacity: 0.6;
+}
+
+.partner-content-inner { /* Contenu intérieur */
+  width: 80%;
+  margin-left: 80px;
+}
+
+.partner-outer-img {
+  margin-left: 0;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}   
+    
+.partner-img {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  position: relative;
+  overflow: hidden; /* Pour empêcher le défilement horizontal */
+}
+
+.partner h1 {
+  overflow: hidden;
+  height: auto;
+  font-family:'Great-Vibes';
+  font-size: 120px;
+  margin-bottom: 150px;
+}
+
+.partner-content p {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  line-height: 80px;
+  margin-bottom: 350px;
+  font-size: 40px;
+}
+
+
+
+
+/* --------------------- REALISATIONS -------------------- */
+
+
+#Real-BlocPics {
+  justify-content: space-between; /* Crée un espace égal entre les images */
+  align-items: center; /* Aligne verticalement les images au centre */
+  margin-top: 50px;
+  flex-direction: row;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+
+#Real-BlocPics img {
+/* Garantit que la hauteur s'ajuste proportionnellement à la largeur */
+  object-fit: contain;
+  border-radius: 25% / 25%; /* Applique une bordure arrondie */
+  margin-right:10px;
+  margin-left: 10px;
+  margin-top: 15px;
+  width: 18%;
+  height: 18%;
+  border: 2px outset white;
+}
+
+.real-main {
+  font-size: 70px;
+  font-family:'Great-Vibes';
+  text-align: center; /* Aligner le texte à droite. */
+  color: white; /* Couleur du texte. */
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.real-main::before {
+  content: "";
+  background-image: url('realisations/background-realisation.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(1px); /* Applique le flou à l'élément ::before */
+  z-index: -1; /* Place l'élément en arrière-plan */
+}
+
+
+
+
+/* --------------------- CONTACT -------------------- */
+
+
+
+
+
+
+/* Style pour le corps de la page */
+.contact-page {
+  font-family: 'Didot', sans-serif;
+  background:url(https://images.pexels.com/photos/5414323/pexels-photo-5414323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) center no-repeat; /* Couleur de fond de la page */
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style pour le formulaire de contact */
+.contact-form {
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto; /* Centre le formulaire horizontalement */
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+/* Style pour le titre du formulaire */
+.contact-form h1 {
+  font-family: 'Great-Vibes';
+  color: white; /* Couleur du texte. */
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  font-size: 40px;
+  margin-bottom: 20px;
+
+}
+
+/* Style pour les étiquettes des champs */
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style pour les champs de saisie */
+.contact-form input[type="text"],
+.contact-form select,
+.contact-form input[type="checkbox"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* Style pour le bouton d'envoi */
+.contact-form button {
+  background-color: #BF307F; /* Couleur de fond du bouton */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Style pour le bouton d'envoi au survol */
+.contact-form button:hover {
+  background-color: #a0256b; /* Couleur de fond modifiée au survol */
+}
